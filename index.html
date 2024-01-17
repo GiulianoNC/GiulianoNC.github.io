@@ -313,13 +313,15 @@
 
   <script>
     // JavaScript para cambiar el idioma
-    function changeLanguage() {
-      var selectedLanguage = document.getElementById('language').value;
-      var newUrl = 'index_' + selectedLanguage + '.html';
-      
-      // Actualiza la URL para cargar la versión en el nuevo idioma
-      window.location.href = newUrl;
-    }
+// JavaScript para cambiar el idioma
+function changeLanguage() {
+  var selectedLanguage = document.getElementById('language').value;
+  var newUrl = 'index' + (selectedLanguage === 'en' ? 'En' : '') + '.html';
+  
+  // Actualiza la URL para cargar la versión en el nuevo idioma
+  window.location.href = newUrl;
+}
+
   </script>
 </body>
 

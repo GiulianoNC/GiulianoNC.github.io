@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+
+
+  <title>
+    Giuliano Capovilla | Android-IOS Developer, Argentina.
+  </title>
+
+  <meta name="description" content="Add small description of yourslef.">
+  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
+  <meta name="keywords" content="Put your name, skills and some coding keywords" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <!-- Selector de Idioma -->
+    <div class="language-selector">
+      <label for="language">Select lenguage: </label>
+      <select id="language" onchange="changeLanguage()">
+        <option value="es">Spanish</option>
+        <option value="en">English</option>
+      </select>
+    </div>
+
+  <!-- ***** Header ***** -->
+
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#work" class="nav__link">Jobs</a></li>
+          <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">Me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <span>Giuliano Néstor Capovilla</span>
+        </h1>
+        <!-- Put a small paragraph about yourself -->
+        <p>From March 2020 to the present date, 
+            my career at Quantum Consulting has spanned several roles,
+            from junior consultant, developing smaller-scale solutions,
+            to working as a Mobile Developer, where I discovered my true passion and skills.</p>
+        <a href="#contact" class="btn btn--pink">Contacto</a>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <!-- ***** Work ***** -->
+
+    <section class="work" id="work">
+      <div class="row">
+        <h2>My jobs</h2>
+        <div class="work__boxes">
+
+          <!-- Each div with the work__box class is a project. -->
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Purchase Order Approval</h3>
+              <p>
+                App for approval of requirements and purchase orders,
+                 Where Purchase Orders Can Be Approved or Rejected 
+                 pending that your company has.
+              </p>
+              <ul class="work__list">
+                <li>DART</li>
+              </ul>
+              <p>The current application was developed using <strong>FLUTTER</strong>
+                to ensure its adaptability on both platforms,
+                 App Store and Play Store. Integrates with <strong>REST API</strong> services,
+                enabling efficient authentication through an Edwards JDE orchestration.
+                This allows us to handle data in <strong>JSON</strong> format
+                that are presented in the user interface,
+                offering a faster and more comfortable experience
+                directly from the mobile apps.
+                This implementation eliminates the need to rely on a computer
+                to carry out these actions, providing greater agility and accessibility.</p>
+
+              <div class="work__links">
+                <a href="https://nisar.surge.sh" target="_blank" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.quantum.mq04f" title="View Source Code" target="_blank">
+                  <img src="./images/play.png" class="work__code" alt="GitHub">
+                </a>
+                <a href="https://apps.apple.com/es/app/qtm-aprobacion-oc/id6451317150" title="View Source Code" target="_blank">
+                  <img src="./images/app.jpg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-container">
+              <div class="work__image-box">
+                <img src="./images/Pantalla-01.png" class="work__image" alt="Project 1" />
+                <img src="./images/Pantalla-02.png" class="work__image" alt="Project 1" />
+                <img src="./images/Pantalla-03.png" class="work__image" alt="Project 1" />
+              </div>
+            
+              <div class="work__image-box">
+                <img src="./images/Pantalla-04.png" class="work__image" alt="Project 1" />
+                <img src="./images/Pantalla-05.png" class="work__image" alt="Project 1" />
+                <img src="./images/Pantalla-06.png" class="work__image" alt="Project 1" />
+              </div>
+            </div>
+            
+            
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Cycle Counting</h3>
+              <p>
+                Android app that facilitates physical inventory counting offline
+                 using a mobile device with a barcode reader or a handheld.
+                 Once the count is complete, the collected data is sent to JDE's AIS server
+                 for entry into the corresponding workforce.
+              </p>
+              <ul class="work__list">
+                <li>JAVA</li>
+                <li>XML</li>
+              </ul>
+              <p>The current application is developed in Java and integrates with REST API services. 
+                Facilitates efficient authentication using JDE Edwards orchestration.
+                 Use <strong>OkHttp</strong> to manage <strong>HTTP</strong> communications, 
+                 Retrofit to consume RESTful web services efficiently,
+                 and <strong>SQLITE</strong> to store data locally in Android apps,
+                 thus allowing the use of the application offline.</p>
+              <div class="work__links">
+                <a href="#" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.quantum.mq012">
+                  <img src="./images/play.png" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-container">
+              <div class="work__image-box">
+                <img src="./images/c1.png" class="work__image" alt="Project 1" />
+                <img src="./images/c2.png" class="work__image" alt="Project 1" />
+                <img src="./images/c3.png" class="work__image" alt="Project 1" />
+                </div>
+            
+              <div class="work__image-box">
+                <img src="./images/c4.png" class="work__image" alt="Project 1" />
+                <img src="./images/c5.png" class="work__image" alt="Project 1" />
+                <img src="./images/c6.png" class="work__image" alt="Project 1" />
+                </div>
+            </div>
+
+
+        </div>
+
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Logistics Processes</h3>
+              <p>
+                A platform was developed at JDE to manage the control of collected pallets
+                 through a mobile app. The platform's interface allows you to record the logistics movements of pallets,
+                 including customs entries, exits, returns, and inter-plant deliveries. 
+                 This system provides full pallet traceability.
+                All movements are subject to a control process
+                 that validates the consistency between the information collected and the transactions uploaded to JDE.              </p>
+              <ul class="work__list">
+                <li>JAVA</li>
+                <li>XML</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="#" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.quantum.mq09">
+                  <img src="./images/play.png" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-container">
+              <div class="work__image-box">
+                <img src="./images/01.png" class="work__image" alt="Project 1" />
+                <img src="./images/03.png" class="work__image" alt="Project 1" />
+                <img src="./images/04.png" class="work__image" alt="Project 1" />
+                </div>
+            
+              <div class="work__image-box">
+                <img src="./images/06.png" class="work__image" alt="Project 1" />
+                <img src="./images/07.png" class="work__image" alt="Project 1" />
+                <img src="./images/10.png" class="work__image" alt="Project 1" />
+
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Clients ***** -->
+
+    <section class="client" id="clients">
+      <div class="row">
+        <h2>Clients</h2>
+        <div class="client__logos">
+          <!-- Add logos of the clients or companies you'have worked with. -->
+          <img src="./images/ceramica.png" class="client__logo" alt="Company 2" />
+          <img src="./images/fabril.png" class="client__logo" alt="Company 3" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** About ***** -->
+
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About me</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <!-- Replace the below paragraph with info about yourself -->
+            <p>
+                I'm a passionate mobile app developer
+                with more than three years of experience in Quantum Consulting,
+                focusing on both online and offline environments, integrated with the AIS server of the Oracle JD Edwards EO system.
+              During this time, I have worked on a variety of projects,
+                from order approval applications integrated with the Orchestrator
+                to apps that use internal databases (SQLite)  and
+                that are integrated into Handheld devices for barcode reading and QR scanning.
+              It should be noted that for the implementation of these applications I have mainly used Java and
+                Retrofit and OkHttp are used for the efficient handling of HTTP requests. 
+                In addition, I have faced and overcome the challenge of successfully launching my first app on the App Store (iOS).
+                where I used Flutter and its language Dart for development  
+                demonstrating my ability to adapt and my technical skills.
+                As a professional goal I seek to advance towards the role of Senior Mobile Developer,
+                aspiring to completely dominate the various platforms 
+                and specialize in Java, Flutter, and Swift. I'm committed to continuing to grow,
+                learning and honing my technical skills to contribute meaningfully
+                to the development of innovative and high-quality applications.            </p>
+            <!-- Provide a link to your resume -->
+            <a href="https://drive.google.com/file/d/1D-Fcvu4XvRIlqXngkofQPo_17g3mYiYk/view?usp=sharing" class="btn">Mi CV</a>
+          </div>
+
+          <div class="about__photo-container">
+            <!-- Add a nice photo of yourself -->
+            <img class="about__photo" src="./images/fotoperfil.jpeg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ***** Contact ***** -->
+
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Get in Touch</h2>
+      <div class="contact__info">
+        <p>
+            Do you need consulting or have any questions?
+            Do you want to give me some advice or just say "Hello 👋"?
+            In any case, don't hesitate to let me know. 
+            I am a mobile developer who is ready to take on any challenge.
+           My motto is "if it shows up in Postman, it can be applied". 😊 
+           The quickest way to contact me is through an email.         </p>
+        <!-- Replace the email with yours -->
+        <a href="mailto:capovillagiuliano@gmail.com" class="btn">capovillagiuliano@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ***** Footer ***** -->
+
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <!-- Update the links to point to your accounts -->
+      <ul class="footer__social-links">
+        <li class="footer__social-link-item">
+          <a href="https://github.com/GiulianoNC" title="Link to Github Profile">
+            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href=
+          "https://www.linkedin.com/in/giuliano-n%C3%A9stor-capovilla-3635a4148/">
+            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+          </a>
+        </li>
+      </ul>
+
+
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  <script src="./index.js"></script>
+
+  <script>
+    // JavaScript para cambiar el idioma
+    function changeLanguage() {
+      var selectedLanguage = document.getElementById('language').value;
+      var newUrl = 'index_' + selectedLanguage + '.html';
+      
+      // Actualiza la URL para cargar la versión en el nuevo idioma
+      window.location.href = newUrl;
+    }
+  </script>
+</body>
+
+</html>
