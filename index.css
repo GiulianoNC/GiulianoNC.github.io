@@ -487,15 +487,24 @@ body:not(.user-is-tabbing) a:focus {
 .work__code:hover {
     transform: scale(1.2);
 }
-.work__image-box {
+.work__image-container {
+    display: flex;
+    flex-wrap: wrap;
     margin-bottom: var(--gutter-normal);
-
+  }
+  
+  .work__image-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
   }
   
   .work__image {
-    width: calc(33.33% - 10px); /* Ajusta el ancho según tus preferencias */
+    width: calc(30% - 10px); /* Ajusta el ancho según tus preferencias */
+    height: auto; /* Mantiene la proporción de la imagen */
     margin: 5px; /* Puedes ajustar el margen entre imágenes según tus preferencias */
   }
+  
   
   
   
