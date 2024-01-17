@@ -22,8 +22,8 @@
     <div class="language-selector">
       <label for="language">Select </label>
       <select id="language" onchange="changeLanguage()">
-        <option value="en">Spanish</option>
-        <option value="es">English</option>
+        <option value="en">English</option>
+        <option value="es">Spanish</option>
       </select>
     </div>
 
@@ -313,7 +313,7 @@
     // JavaScript para cambiar el idioma
     function changeLanguage() {
       var selectedLanguage = document.getElementById('language').value;
-      var newUrl = 'index' + '.html';
+      var newUrl = 'index' + (selectedLanguage === 'es' ? 'Es' : '') + '.html';
       
       // Actualiza la URL para cargar la versión en el nuevo idioma
       window.location.href = newUrl;
