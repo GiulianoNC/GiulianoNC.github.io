@@ -54,7 +54,7 @@
             my career at Quantum Consulting has spanned several roles,
             from junior consultant, developing smaller-scale solutions,
             to working as a Mobile Developer, where I discovered my true passion and skills.</p>
-        <a href="#contact" class="btn btn--pink">Contacto</a>
+        <a href="#contact" class="btn btn--pink">Contact</a>
       </div>
     </div>
   </header>
@@ -312,12 +312,13 @@
   <script>
     // JavaScript para cambiar el idioma
     function changeLanguage() {
-      var selectedLanguage = document.getElementById('language').value;
-      var newUrl = 'index_' + selectedLanguage + '.html';
-      
-      // Actualiza la URL para cargar la versión en el nuevo idioma
-      window.location.href = newUrl;
-    }
+  var selectedLanguage = document.getElementById('language').value;
+  var newUrl = 'index' + (selectedLanguage === 'es' ? 'Es' : '') + '.html';
+  
+  // Actualiza la URL para cargar la versión en el nuevo idioma
+  window.location.href = newUrl;
+}
+
   </script>
 </body>
 
