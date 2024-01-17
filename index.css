@@ -490,7 +490,15 @@ body:not(.user-is-tabbing) a:focus {
 
 .work__image-box {
     margin-bottom: var(--gutter-normal);
-}
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .work__image {
+    width: 100px; /* Ajusta el ancho según tus necesidades */
+    height: auto; /* Mantiene la proporción de la imagen */
+  }
+  
 
 @media(min-width: 901px) {
     .work__image-box {
