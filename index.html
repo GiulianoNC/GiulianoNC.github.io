@@ -18,6 +18,14 @@
 </head>
 
 <body>
+    <!-- Selector de Idioma -->
+    <div class="language-selector">
+      <label for="language">Selecciona el Idioma: </label>
+      <select id="language" onchange="changeLanguage()">
+        <option value="es">Español</option>
+        <option value="en">Inglés</option>
+      </select>
+    </div>
 
   <!-- ***** Header ***** -->
 
@@ -302,6 +310,17 @@
     <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
   </a>
   <script src="./index.js"></script>
+
+  <script>
+    // JavaScript para cambiar el idioma
+    function changeLanguage() {
+      var selectedLanguage = document.getElementById('language').value;
+      var newUrl = 'index_' + selectedLanguage + '.html';
+      
+      // Actualiza la URL para cargar la versión en el nuevo idioma
+      window.location.href = newUrl;
+    }
+  </script>
 </body>
 
 </html>
