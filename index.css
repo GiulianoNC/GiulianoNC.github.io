@@ -506,6 +506,12 @@ body:not(.user-is-tabbing) a:focus {
     border-radius: 10px; /* Añade el border-radius aquí */
   
 }
+@media (min-width: 768px) {
+    .work__image {
+      margin-left: 5px; /* Ajusta el valor según tus preferencias */
+    }
+  }
+  
   
   
   
