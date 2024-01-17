@@ -501,7 +501,6 @@ body:not(.user-is-tabbing) a:focus {
   
   .work__image {
     width: calc(30% - 10px); /* Ajusta el ancho según tus preferencias */
-    height: auto; /* Mantiene la proporción de la imagen */
     margin: 5px; /* Puedes ajustar el margen entre imágenes según tus preferencias */
   }
   
