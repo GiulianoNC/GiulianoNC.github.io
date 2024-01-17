@@ -482,6 +482,8 @@ body:not(.user-is-tabbing) a:focus {
     height: 3rem;
     margin-left: var(--gutter-normal);
     transition: all .3s;
+    border-radius: 10px; /* Añade el border-radius aquí */
+
 }
 
 .work__code:hover {
@@ -501,7 +503,9 @@ body:not(.user-is-tabbing) a:focus {
   .work__image {
     width: calc(30% - 10px); /* Ajusta el ancho según tus preferencias */
     margin: 5px; /* Puedes ajustar el margen entre imágenes según tus preferencias */
-  }
+    border-radius: 10px; /* Añade el border-radius aquí */
+  
+}
   
   
   
@@ -515,6 +519,11 @@ body:not(.user-is-tabbing) a:focus {
         margin: 0 0 0 10rem;
     }
 }
+.work__code,
+.work__image {
+    border-radius: 10px;
+}
+
 
 @media(max-width: 900px) {
     .work__code {
