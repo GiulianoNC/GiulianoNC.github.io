@@ -462,6 +462,14 @@ body:not(.user-is-tabbing) a:focus {
     }
 }
 
+.work__box--bio {
+  display: flex;
+  flex-direction: column; /* 🔹 apila los párrafos */
+  gap: 1rem;              /* 🔹 deja espacio entre ellos */
+  text-align: justify;    /* 🔹 opcional, mejora la lectura */
+}
+
+
 .work__links {
     display: flex;
     align-items: center;
