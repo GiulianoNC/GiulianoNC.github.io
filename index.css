@@ -462,7 +462,7 @@ body:not(.user-is-tabbing) a:focus {
     }
 }
 
-.work__box--bio {
+.parrafos_desc {
   display: flex;
   flex-direction: column; /* 🔹 apila los párrafos */
   gap: 1rem;              /* 🔹 deja espacio entre ellos */
